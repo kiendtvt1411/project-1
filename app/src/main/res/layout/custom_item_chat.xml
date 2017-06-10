@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChatDate"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="16:48"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@drawable/khung_chat_out"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvItemChatLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Kien dz vcl ra y cac ban oi"
+                        android:maxWidth="240dp" />
+                    <TextView
+                        android:id="@+id/tvItemAuthorLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="kien@gmail.com"
+                        android:visibility="gone"
+                        android:maxWidth="240dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvItemStatusLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/llRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:visibility="gone"
+                    android:background="@drawable/khung_chat_in"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tvItemChatRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="vanhthui"
+                        android:maxWidth="240dp" />
+                    <TextView
+                        android:id="@+id/tvItemAuthorRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone"
+                        android:maxWidth="240dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvItemStatusRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

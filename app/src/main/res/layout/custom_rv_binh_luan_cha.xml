@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/girl"
+            android:id="@+id/imgAvatarComment"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgSettingComment"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="Kiên Nguyễn Trung"
+                android:textColor="@color/facebook"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/tvUsernameComment"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tại "
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Học viện Ăn hàng - Ở không"
+                    android:textSize="12sp"
+                    android:id="@+id/tvLocationComment"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/girl"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/imgAnhMinhHoaComment"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="chênh lính ở phút 10 cao nhất - sát thương trung bình nhiều nhất - % teamwork cũng cao nhất :v
+vậy mà trc giải có 1 số thanh niên nói Bang tuổi gì so với Deft Uzi thậm chí là 2lift các kiểu "
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:ellipsize="end"
+                android:id="@+id/tvContentComment"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/empty_heart"
+                    android:id="@+id/imgLikeComment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16"
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp"
+                    android:id="@+id/tvTransactionLikeComment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" thích"
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp"
+                    android:id="@+id/tvLikeComment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="trả lời"
+                    android:textColor="@color/facebook"
+                    android:textSize="12sp"
+                    android:id="@+id/tvReplyComment"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 phút trước"
+                    android:textColor="@color/colorGray"
+                    android:textSize="12sp"
+                    android:id="@+id/tvTimeComment"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

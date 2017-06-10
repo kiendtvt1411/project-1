@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/colorToolbar"
+            app:theme="@style/menuitem"
+            ></android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_all"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorRed"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_edtHoTenDK"
+                android:layout_margin="10dp"
+                >
+                <dhbkhn.kien.kienmessenger.CustomView.ClearEditText
+                    android:id="@+id/edtHoTenDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:textColor="@color/colorToolbar"
+                    android:maxLines="1"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_edtEmailDK"
+                android:layout_margin="10dp"
+                >
+                <dhbkhn.kien.kienmessenger.CustomView.ClearEditText
+                    android:id="@+id/edtEmailDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintemail"
+                    android:textColor="@color/colorToolbar"
+                    android:maxLines="1"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_edtMatKhauDK"
+                android:layout_margin="10dp"
+                >
+                <dhbkhn.kien.kienmessenger.CustomView.PasswordEditText
+                    android:id="@+id/edtMatKhauDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintpassword"
+                    app:useNope="true"
+                    app:useValidate="true"
+                    android:textColor="@color/colorToolbar"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_6letter_cap"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorToolbar"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_edtNhapLaiMatKhauDK"
+                android:layout_margin="10dp"
+                >
+                <dhbkhn.kien.kienmessenger.CustomView.PasswordEditText
+                    android:id="@+id/edtNhapLaiMatKhauDK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_repeat_pass"
+                    app:useNope="true"
+                    android:textColor="@color/colorToolbar"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/swNhanDocQuyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/i_want"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:textColor="@color/colorToolbar"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDangKy"
+                android:text="@string/btnRegister"
+                android:padding="10dp"
+                android:background="@color/orange"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_understand"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorToolbar"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orRegisterWith"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorToolbar"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/facebookiconsmall"
+                    android:text="@string/facebook"
+                    android:background="@drawable/vien_facebook"
+                    android:textColor="@color/facebook"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnDangKyFacebook"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/googleplussmall"
+                    android:text="@string/gmail"
+                    android:background="@drawable/vien_gmail"
+                    android:id="@+id/btnDangKyGoogle"
+                    android:textColor="@color/gmail"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+

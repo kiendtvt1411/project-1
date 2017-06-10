@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dhbkhn.kien.kienmessenger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_khong_transfer"
+        android:label="Mess"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".View.DangNhap_DangKy.DangNhapMessenger">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.Chat.ChatDoi" />
+        <activity android:name=".View.TrangChu.TrangChu" />
+        <activity android:name=".View.ThemNhomChat.ThemNhomChat" />
+        <activity android:name=".View.ThemBanChat.ThemBanChat" />
+        <activity android:name=".View.DangNhap_DangKy.DangNhap" />
+        <activity android:name=".View.ThemBanChat.LoiMoiThemBan" />
+
+        <service android:name=".Presenter.Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Presenter.Service.MyFirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Model.TrangChu.TrangChuService"/>
+
+        <activity android:name=".View.Chat.ChatNhom" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".View.Map.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".View.Map.DanhSachBanQuanhDay" />
+        <activity android:name=".View.DangNhap_DangKy.DangKyTaiKhoan" />
+        <activity android:name=".View.Status.Comment.XemChiTietStatus" />
+        <activity android:name=".View.ThemBanChat.XemTrangCaNhanCuaNguoiKhac" />
+        <activity android:name=".View.ThemPageGroup.TaoPageDoanhNghiep" />
+        <activity android:name=".View.TrangChu.DanhSachNhomDaThamGia" />
+        <activity android:name=".View.ThemPageGroup.ChiTietGroupPage" />
+        <activity android:name=".View.ThemPageGroup.Tour.ThemTourMoi" />
+        <activity android:name=".View.TrangChu.QuyenCuaAdmin" />
+        <activity android:name=".View.ThemPageGroup.Tour.ChiTietTour" />
+        <activity android:name=".View.TrangChu.QuanLyCaNhan" />
+        <activity android:name=".View.TrangChu.FragmentThongTinDuLich.DanhSachTheLoaiChiTiet" />
+        <activity android:name=".View.TrangChu.TrangCaNhan"></activity>
+    </application>
+
+</manifest>

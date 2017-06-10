@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:theme="@style/PopupMenu"
+    >
+    <item
+        android:title="Ẩn"
+        android:id="@+id/item_status_share"
+        android:icon="@drawable/invi"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Chỉnh sửa"
+        android:id="@+id/item_status_update"
+        android:icon="@drawable/update"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Xóa"
+        android:id="@+id/item_status_delete"
+        android:icon="@drawable/delete"
+        app:showAsAction="always"
+        />
+</menu>

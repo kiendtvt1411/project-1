@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorToolbar">#024463</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ec1212</color>
+    <color name="colorGray">#b6b4b4</color>
+    <color name="colorCyan">#04c6a9</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#e999e7</color>
+    <color name="purple">#993366</color>
+    <color name="green">#21be27</color>
+    <color name="hong">#FFCC99</color>
+    <color name="mess_send">#06a409</color>
+    <color name="mess_receiver">#089999</color>
+    <color name="facebook">#4a6ea9</color>
+    <color name="gmail">#da4835</color>
+    <color name="orange">#ef8c1a</color>
+    <color name="transparent_black">#bf000000</color>
+    <color name="transparent_light_black">#1f000000</color>
+    <color name="transparent_white">#bfffffff</color>
+    <color name="transparent_dialog">#00000000</color>
+    <color name="trong_suot_100">#3f000000</color>
+    <color name="gray_light">#e4e0e0</color>
+    <color name="colorYellow">#ece514</color>
+</resources>

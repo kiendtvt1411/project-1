@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:title="Thông báo"
+        android:id="@+id/item_notifi"
+        android:icon="@drawable/earth"
+        app:actionLayout="@layout/custom_item_notification"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="more"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:title="Quyền Admin"
+                android:id="@+id/item_permision_admin"
+                android:icon="@drawable/ic_pan_tool_black_24dp"
+                />
+            <item
+                android:title="Thêm bạn"
+                android:id="@+id/item_add_fr"
+                android:icon="@drawable/ic_person_add_black_24dp"
+                />
+            <item
+                android:id="@+id/item_add_group"
+                android:title="Thêm nhóm"
+                android:icon="@drawable/ic_group_add_black_24dp"
+                />
+            <item
+                android:id="@+id/item_cac_doanh_nghiep"
+                android:title="Các page"
+                android:icon="@drawable/ic_group_work_black_24dp"
+                />
+            <item
+                android:id="@+id/item_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Chỉnh sửa"
+                />
+            <item
+                android:id="@+id/log_out"
+                android:title="Đăng xuất"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                />
+        </menu>
+    </item>
+
+</menu>
